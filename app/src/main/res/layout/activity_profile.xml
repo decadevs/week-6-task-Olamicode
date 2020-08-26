@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/profileActivity"
+    tools:context=".ProfileActivity">
+
+    <!--    Header Image -->
+
+        <ImageView
+            android:id="@+id/ivHeaderImage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/landscapepic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    User's profile name -->
+
+    <TextView
+        android:id="@+id/tvProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/placeholder"
+        android:fontFamily="@font/roboto"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ivHeaderImage"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <!--    User's phone number field -->
+
+    <TextView
+        android:id="@+id/tvPhoneNumber"
+        style="@style/profile_text_style"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivPhoneNum"
+        app:layout_constraintTop_toTopOf="@+id/ivPhoneNum" />
+
+    <ImageView
+        android:id="@+id/ivPhoneNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/ic_action_phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivHeaderImage" />
+
+
+    <!--    User's email field -->
+
+    <TextView
+        android:id="@+id/tvEmailAddress"
+        style="@style/profile_text_style"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivEmailAdd"
+        app:layout_constraintTop_toTopOf="@+id/ivEmailAdd" />
+
+    <ImageView
+        android:id="@+id/ivEmailAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/ic_action_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPhoneNum" />
+
+
+    <!--    User's gender field -->
+
+    <TextView
+        android:id="@+id/tvGender"
+        style="@style/profile_text_style"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivGenderTwo"
+        app:layout_constraintTop_toTopOf="@+id/ivGenderTwo" />
+
+    <ImageView
+        android:id="@+id/ivGenderTwo"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/male_and_female"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivEmailAdd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
