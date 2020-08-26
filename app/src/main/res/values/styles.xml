@@ -1,0 +1,32 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/primaryPurple</item>
+        <item name="colorAccent">@color/primaryPink</item>
+        <item name="android:textColor">@color/primaryPurple</item>
+    </style>
+
+    <style name="form_background_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:drawablePadding">12dp</item>
+        <item name="android:background">@drawable/form_states</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/primaryPurple</item>
+    </style>
+
+    <style name="profile_text_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:background">@drawable/profile_info_bottomline</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>
